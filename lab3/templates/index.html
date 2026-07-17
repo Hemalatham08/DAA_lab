@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MST Algorithms</title>
+
+</head>
+
+<body>
+
+<h1>Kruskal's Algorithm</h1>
+
+<ul>
+
+{% for u,v,w in k_mst %}
+
+<li>{{u}} - {{v}} (Weight {{w}})</li>
+
+{% endfor %}
+
+</ul>
+
+<h3>Total Cost : {{k_cost}}</h3>
+
+<hr>
+
+<h1>Prim's Algorithm</h1>
+
+<ul>
+
+{% for u,v,w in p_mst %}
+
+<li>{{u}} - {{v}} (Weight {{w}})</li>
+
+{% endfor %}
+
+</ul>
+
+<h3>Total Cost : {{p_cost}}</h3>
+
+</body>
+
+</html>
